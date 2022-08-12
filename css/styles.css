@@ -1,0 +1,1042 @@
+@font-face {
+    font-family: Klavika;
+    src: 
+    url('../fonts/Klavika-Regular.otf'),
+    url('../fonts/Klavika-Bold.otf'),
+    url('../fonts/Klavika-BoldCond.otf'),
+    url('../fonts/Klavika-BoldCondItalic.otf'),
+    url('../fonts/Klavika-BoldItalic.otf'),
+    url('../fonts/Klavika-Light.otf'),
+    url('../fonts/Klavika-LightCond.otf'),
+    url('../fonts/Klavika-LightCondItalic.otf'),
+    url('../fonts/Klavika-LightItalic.otf'),
+    url('../fonts/Klavika-Medium.otf'),
+    url('../fonts/Klavika-MediumCond.otf'),
+    url('../fonts/Klavika-MediumCondItalic.otf'),
+    url('../fonts/Klavika-MediumItalic.otf'),
+    url('../fonts/Klavika-Regular.otf'),
+    url('../fonts/Klavika-RegularCond.otf'),
+    url('../fonts/Klavika-RegularCondItalic.otf'),
+    url('../fonts/Klavika-RegularItalic.otf');
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+    font-family: Klavika;
+    margin:0;
+    padding:0;
+}
+.navbar {
+    position:fixed;
+    justify-content: center;
+    display:flex;
+    align-items:center;
+    width:100%;
+    background-color:#FFFFFF;
+    -webkit-box-shadow: 0px 9px 15px -14px rgba(101, 101, 113, 1);
+    -moz-box-shadow: 0px 9px 15px -14px rgba(101, 101, 113, 1);
+    box-shadow: 0px 9px 15px -14px rgba(101, 101, 113, 1);
+    z-index:5;
+
+}
+.navbar-links ul {
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.navbar-links li {
+    list-style:none;
+    padding-top:.7rem;
+    
+}
+.navbar-links li span {
+    font-weight: bold;
+    border-left:1px solid black;
+    padding:.3rem 1rem;
+
+}
+.navbar-links li a {
+    text-decoration:none;
+    display:block;
+    color:black;
+}
+.navbar-logo {
+    padding:1rem 2rem;
+}
+.navbar-links a:hover {
+    color:#F58220;
+}
+.toggle-button {
+    position:absolute;
+    top: 2rem;
+    right: 2rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+.toggle-button .bar {
+    height:3px;
+    width:100%;
+    background-color:black;
+    border-radius: 10px;
+}
+.BUTTON_MRX {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #F58220;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: solid #FFFFFF 2px;
+    font-weight: bold;
+    padding:1rem 1.5rem;
+    margin-top:.4rem;
+ }
+ 
+ .BUTTON_MRX:hover {
+    background: #FFFFFF;
+    border: solid #F58220 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#F58220;
+    font-weight: bold;
+ }
+ .topbanner {
+    padding-top:5.3125rem;
+}
+ .topbanner img {
+    width:100%;
+    height:100%;
+}
+.topbanner-img2 {
+    display:none;
+}
+.content {
+    width:60%;
+    margin: 0 auto;
+    height:auto;
+    
+}
+.intro {
+    display:flex;
+    flex-direction:row;
+}
+.intro-text {
+    width:50%;
+    float:left;
+    margin:0 auto;
+    justify-content:center;
+    padding-left:10%;
+    padding-top:3%;
+    padding-bottom:1rem;
+}
+.intro-text h1 {
+    color:#F58220; 
+    font-size:27px;
+}
+.intro-text ul {
+    display:block;
+    list-style:none;
+    padding-left: 0px;
+    margin-top:8px;
+}
+.intro-text ul img {
+    z-index:-1;
+    transform: translate(-10px,10px);
+    padding-left:1rem;
+}
+.intro-text ul span {
+    font-size:20px;
+    font-weight:bold;
+}
+.intro-text p {
+    color:#333333; 
+    font-size:18px;
+}
+.intro-text2 {
+    width:100%;
+    float:left;
+    margin:0 auto;
+    justify-content:center;
+    padding-left:2rem;
+    padding-top:14%;
+}
+.intro-text p{
+    margin:0;
+}
+.intro-text2 span {
+    display: block;
+}
+.intro-text h1{
+    margin:0;
+}
+.intro-text2 h1{
+    margin:0;
+}
+.intro-img {
+    cursor: pointer;
+    z-index:1;
+    width:100%;
+    padding-top: 40%;
+    height:auto;
+    background-image: url("../pictures/pc/003_ZDJ_1_STOCK_ZGLOS_SIE_608x488.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    float:left;
+}
+.intro-img2 {
+    z-index:-1;
+    width:100%;
+    padding-top:40%;
+    background-image: url("../pictures/pc/005_ZDJ_2_JAK_WYGRAC_602x488.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float:left;
+}
+.picture {
+    display:block;
+    width:100%;
+    padding-top:70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../pictures/pc/004_NA_CZYM_POLEGA_1200x920.png");
+}
+.blank .space {
+    width:100%;
+    height:100px;
+    margin-bottom:3px;
+    -webkit-box-shadow: 0px 9px 15px -14px rgba(101, 101, 113, 1);
+    -moz-box-shadow: 0px 9px 15px -14px rgba(101, 101, 113, 1);
+    box-shadow: 0px 9px 10px -14px rgba(101, 101, 113, 1);
+}
+.button-signup {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #F58220;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: solid #FFFFFF 2px;
+    padding:1rem 8rem;
+    margin-top:18rem;
+    margin-left:7.5rem;
+    font-size:18px;
+}
+.button-signup:hover {
+    background: #FFFFFF;
+    border: solid #F58220 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#F58220;
+    font-size:18px;
+ }
+ .picture {
+     width:100%;
+     display:flex;
+     overflow: auto;
+     -webkit-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 30px -14px rgba(66, 68, 90, 1);
+ }
+ .picture img {
+    width: 100%;
+    height: auto;
+ }
+ .signinall {
+     display:flex;
+     width:100%;
+     -webkit-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 30px -14px rgba(66, 68, 90, 1);
+    border-bottom:2px solid #F58220;
+    z-index:4;
+ }
+ .signin {
+     width:60%;
+ }
+.signin-button {
+    position:relative;
+    width:40%;
+    margin:0 auto;
+    justify-content:center;
+}
+.signin-button button {
+    top:25%;
+    position:absolute;
+}
+ .signinall p {
+     font-size:20px;
+     padding:1rem 2rem;
+ }
+ .youtube-content {
+     display:flex;
+     width:100%;
+ }
+ .youtube-content span {
+    padding-top:3rem;
+    padding-bottom:1rem;
+}
+.youtube {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-bottom:1rem;
+}
+.youtube-links {
+    overflow: auto;
+    justify-content:center;
+    margin:0 auto;
+}
+.fullform {
+    -webkit-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 30px -14px rgba(66, 68, 90, 1);
+}
+.fullform-photo {
+    display:block;
+    width:100%;
+    padding-top:15%;
+    height:0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    background-image: url("../pictures/pc/006_FORMULARZ_PASEK_1200x128.png");
+}
+.registration-waiting{
+    justify-content:center;
+    margin:0 auto;
+    display:table;
+    margin:0 auto;
+    padding-bottom:8.5rem;
+    padding-top:3rem;
+}
+.bottom-footer {
+    z-index:5;
+    position:fixed;
+    width:100%;
+    margin:0 auto;
+    bottom: 0;
+    background-color:#FFFFFF;
+    -webkit-box-shadow: 0px -9px 15px -14px rgba(101, 101, 113, 1);
+    -moz-box-shadow: 0px -9px 15px -14px rgba(101, 101, 113, 1);
+    box-shadow: 0px -9px 15px -14px rgba(101, 101, 113, 1);
+}
+.footer-content {
+    padding-top:1rem;
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container {
+    padding:.5rem 1rem;
+    align-items: center;
+}
+.footer-container-border {
+    padding:.5rem 1rem;
+    color:#F58220;
+    border-left:1px solid #F58220;
+}
+.before-register {
+    width:100%;
+    display:flex;
+    padding-bottom:1rem;
+}
+.before-register span {
+    margin:0 auto;
+    align-items:center;
+    color:#6F767B; 
+    font-size:12px;
+}
+.temporary img {
+    max-width:100%;
+}
+.metamorphose {
+    color:#333333; 
+    font-size:50px;
+}
+/* Form */
+form {
+    color:#6F767B; 
+    width:85%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.user-details{
+    font-size:22px;
+}
+.input-box {
+    width:100%;
+    padding:10px 0;
+    display:flex;
+    flex-direction:row;
+}
+.user-text {
+    width:25%;
+    padding-top:0.2rem;
+    margin-right:1rem;
+}
+.user-text {
+    text-align:right;
+}
+.user-input {
+    width:70%;
+}
+.user-input-name {
+    width:70%;
+}
+.user-input-lastname {
+    width:70%;
+}
+.user-input-email {
+    width:70%;
+}
+.user-input-phone {
+    width:70%;
+}
+.user-input-name input {
+    padding:10px 50% 10px 12px; 
+}
+.user-input-lastname input{
+    padding:10px 50% 10px 12px; 
+}
+.user-input-email input{
+    padding:10px 30% 10px 12px; 
+}
+.user-input-phone input{
+    padding:10px 10% 10px 12px; 
+}
+.input-box input {
+    border:1px solid #b1b4b6;  
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.localization {
+    display:flex;
+    flex-direction:row;
+    font-size:22px;
+    padding:20px 0;
+}
+.localization-radio {
+    display:flex;
+    flex-direction: row;
+}
+.check-boxes {
+    font-size:18px;
+}
+.check-box {
+    display:flex;
+    flex-direction:row;
+    padding:10px 0;
+}
+.check-text {
+    padding-left:20px;
+}
+.submit {
+    padding:2rem 0;
+    margin:0 auto;
+}
+.submit-buttonn {
+    position:relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #F58220;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: solid #FFFFFF 2px;
+    font-weight: bold;
+    padding:1.3rem 3rem;
+    margin-top:.4rem;
+    font-size:20px;
+    transition: all 0.2s;
+}
+.submit-buttonn:hover {
+    background: #FFFFFF;
+    border: solid #F58220 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#F58220;
+    font-weight: bold;
+} 
+.submit-button--loading {
+    padding:1.3rem 3rem;
+    display: inline-block;
+    outline:none;
+    line-height: 1.4;
+    background: #F58220; 
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    font-size:20px;
+    position: relative;
+    transition: padding-right .3s ease;
+    font-weight:700;
+}
+.submit-button--loading:hover {
+    box-shadow:0 0 10px darken(#ffffff,10%) inset, 0px 1px 0 lighten(#ffffff,10%);
+    color:#ffffff;
+    background-color:#db9558;
+}
+.submit-button--loading:active{
+    color:#ffffff;
+    background-color: #F58220;
+}
+.submit-button--loading.spinning {
+    background-color: #F58220;
+    padding-right: 4.5rem;
+}
+.submit-button--loading.spinning:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate360 .5s infinite linear, exist .1s forwards ease;
+}
+.submit-button--loading.spinning:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 16px;
+    top: 50%;
+    position: absolute;
+    border-right: 3px solid #ffffff;
+    animation: rotate360 .5s infinite linear, exist .1s forwards ease ;
+}
+@keyframes rotate360 { 
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes exist { 
+    100% {
+        width: 30px;
+        height: 30px;
+        margin: -16px 5px 0 0px;
+    }
+}
+.submit a {
+    text-decoration:none;
+}
+input[type=checkbox] {
+    transform: scale(2);
+}
+a#zglossie {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+#serverResponse {
+    display:none;
+    position:relative;
+    padding:0.75rem 1.25rem;
+    text-align:center;
+    margin-bottom:1rem;
+    padding-right:35px;
+}
+.close {
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+    width: 16px;
+    height: 16px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+.error {
+    display:none;
+    display:inline-block;
+    width:100%;
+    color:red;
+}
+#localization-error {
+    width: auto;
+    top: -1.8rem;
+    left: 1.7rem;
+    position: relative;
+}
+#label1-error {
+    width: auto;
+    top: -1.8rem;
+    left: 1.7rem;
+    position: relative;
+}
+.anchor {
+    display:none;
+    width:100%;
+    height:488px;
+}
+@media (max-width:650px){
+    .user-input-name input {
+        padding:10px 0 10px 2px; 
+    }
+    .user-input-lastname input{
+        padding:10px 0 10px 2px; 
+    }
+    .user-input-email input{
+        padding:10px 0 10px 2px; 
+    }
+    .user-input-phone input{
+        padding:10px 0 10px 2px; 
+    }
+    .user-text {
+        padding-top:0.2rem;
+        margin-right:0.5rem;
+    }
+    .localization-text {
+        width:50%;
+    }
+    .localization-radio {
+        width:50%;
+    }
+    .localization {
+        width:100%;
+    }
+    .content {
+        width:100%;
+    }
+    .toggle-button {
+        display:flex;
+    }
+    .navbar-links {
+        display:none;
+        width:100%;
+    }
+    .navbar-button {
+        display:none;
+        margin-left: auto;
+        margin-bottom: .5rem;
+        margin-right: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align:right;
+    }
+    .navbar-links li span {
+        border-left:none;
+    }
+    .navbar-links.active {
+        display:flex;
+    }
+    .navbar-button.active {
+        display:flex;
+    }
+    .intro {
+        padding-top:1px;
+        display:flex;
+        flex-direction:column;
+    }
+    .intro-text {
+        width:90%;
+        padding-bottom:1rem;
+    }
+    .intro-text ul span {
+        font-size:18px;
+    }
+    .intro-img {
+        padding-top:70%;
+        width:100%;
+        height:0;
+        background-position: center top;
+        background-size:contain;
+        background-image: url("../pictures/mobile/MOB_ZDJ_1_720x490.png");
+    }
+    .picture {
+        padding-top:130%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../pictures/mobile/MOB_NA_CZYM_POLEGA_720x974.png");
+    }
+    .intro-img2 {
+        padding-top: 50%;
+        width:100%;
+        background-position: center;
+        background-image: url("../pictures/mobile/MOB_ZDJ_2_JAK_WYGRAC_720x370.png");
+    }
+    .signinall {
+        display:flex;
+        flex-direction:column;
+    }
+    .signin {
+        width:100%;
+    }
+    .signin-button {
+        width:100%;
+        padding-top:0;
+        padding-bottom:15px;
+    }
+    .signin-button button {
+        display:flex;
+        position: relative;
+        margin:0 auto;
+    }
+    .intro-text2 {
+        display:none;
+    }
+    .youtube {
+        width:70%;
+        margin: 0 auto;
+    }
+    .youtube-content span {
+        justify-content:center;
+        text-align:center;
+    }
+    .space {
+        display:none;
+    }
+    .registration-waiting {
+        margin:0 auto;
+        text-align: center;
+    }
+    .user-details {
+        font-size:14px;
+    }
+    .localization {
+        width:100%;
+        font-size:16px;
+    }
+    .localization-radio {
+        display:flex;
+        flex-direction: column;
+    }
+    .check-boxes {
+        font-size:16px;
+    }
+    .footer-content {
+        display:flex;
+        flex-direction:column;
+    }
+    .registration-waiting {
+        padding-bottom:15rem;
+    }
+    .footer-container-border {
+        padding-bottom:1rem;
+        border:none;
+    }
+    .fullform-photo {
+        padding-top:18%;
+    }
+    .before-register {
+        text-align:center;
+    }
+    .youtube-link iframe{
+        padding:0.5rem 0;
+    }
+    .topbanner-img2 {
+        display:block;
+    }
+    .topbanner-img1 {
+        display:none;
+    }
+    .topbanner img {
+        height:100%;
+    }
+}
+@media (min-width:650px) and (max-width:1050px) {
+    .content {
+        width:85%;
+    }
+    .toggle-button {
+        display:flex;
+    }
+    .navbar-links {
+        display:none;
+        width:100%;
+    }
+    .navbar-button {
+        display:none;
+        margin-left: auto;
+        margin-bottom: .5rem;
+        margin-right: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align:right;
+    }
+    .navbar-links li span {
+        border-left:none;
+    }
+    .navbar-links.active {
+        display:flex;
+    }
+    .navbar-button.active {
+        display:flex;
+    }
+    .intro {
+        display:flex;
+        flex-direction:column;
+    }
+    .intro-text {
+        width:80%;
+        padding-bottom:1rem;
+        margin:0 auto;
+    }
+    .topbanner-img1 {
+        display:block;
+    }
+    .topbanner-img2 {
+        display:none;
+    }
+    .intro-img {
+        padding-top: 70%;
+        background-position: center;
+        background-size:cover;
+        background-image: url("../pictures/mobile/MOB_ZDJ_1_720x490.png");
+    }
+    .picture {
+        padding-top:130%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../pictures/mobile/MOB_NA_CZYM_POLEGA_720x974.png");
+    }
+    .intro-img2 {
+        padding-top: 50%;
+        width:100%;
+        background-position: center;
+        background-image: url("../pictures/mobile/MOB_ZDJ_2_JAK_WYGRAC_720x370.png");
+    }
+    .submit-button {
+        font-size:18px;
+    }
+    .intro-text2 {
+        display:none;
+    }
+    .youtube {
+        width:70%;
+        margin: 0 auto;
+    }
+    .youtube-content span {
+        justify-content:center;
+        text-align:center;
+    }
+    .space {
+        display:none;
+    }
+    .registration-waiting {
+        margin:0 auto;
+        text-align: center;
+    }
+    .user-details {
+        font-size:18px;
+    }
+    .localization {
+        width:100%;
+        font-size:18px;
+    }
+    .localization-radio {
+        display:flex;
+        flex-direction: column;
+    }
+    .check-boxes {
+        font-size:16px;
+    }
+    .topbanner-img2 {
+        display:block;
+    }
+    .topbanner-img1 {
+        display:none;
+    }
+    .topbanner img {
+        height:100%;
+    }
+}
+@media (max-width:1050px) {
+    .fullform-photo {
+        background-image: url("../pictures/mobile/MOB_FORMULARZ_PASEK_720x100.png");
+        
+    }
+    
+}
+@media (min-width:1050px) and (max-width:1333px) {
+    .topbanner-img2 {
+        display:block;
+    }
+    .topbanner-img1 {
+        display:none;
+    }
+    .metamorphose {
+        color:#333333; 
+        font-size:45px;
+    }
+    .button-signup {
+        margin-top:18rem;
+        margin-left:4.5rem;
+        padding:.7rem 6rem;
+    }
+    .intro-text ul {
+        margin:0;
+    }
+    .intro {
+        display:flex;
+        flex-direction:column;
+    }
+    .intro-text {
+        width:100%;
+        padding-bottom:1rem;
+    }
+    .intro-text p{
+        padding-top:5px;
+    }
+    .intro-img {
+        padding-top: 70%;
+        background-size:cover;
+        background-position: center;
+        background-image: url("../pictures/mobile/MOB_ZDJ_1_720x490.png");
+    }
+    .picture {
+        padding-top:120%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../pictures/mobile/MOB_NA_CZYM_POLEGA_720x974.png");
+    }
+    .intro-img2 {
+        padding-top: 50%;
+        width:100%;
+        background-position: center;
+        background-image: url("../pictures/mobile/MOB_ZDJ_2_JAK_WYGRAC_720x370.png");
+    }
+    .intro-text2 {
+        display:none;
+    }
+    .space {
+        display:none;
+    }
+    .content {
+        width:70%;
+    }
+    .localization {
+        font-size:20px;
+    }
+}
+@media (min-width:1333px) and (max-width:1600px) {
+    .button-signup {
+        margin-top:18rem;
+        margin-left:6.5rem;
+        padding:.7rem 6rem;
+
+    }
+    .intro {
+        display:flex;
+        flex-direction:row;
+    }
+    .intro-text {
+        padding-left:0;
+        width:50%;
+        margin:0 auto;
+        justify-content:center;
+        padding-bottom:1rem;
+    }
+    .intro-img {
+        width:100%;
+    }
+    .intro-text2 {
+        width:100%;
+        margin:0 auto;
+        justify-content:center;
+        padding-bottom:1rem;
+    }
+    .intro-img2 {
+        width:100%;
+    }
+}
+@media (max-width:1600px) {
+    .youtube-links {
+        display:flex;
+        flex-direction:column;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .youtube-link iframe{
+        top: 0;
+        left: 0;
+        position:absolute;
+        width:100%;
+        height:100%;
+    }
+    .youtube {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .youtube-links {
+        width:100%;
+    }
+    .youtube-link iframe{
+        padding:2rem 0;
+    }
+    .youtube-content span {
+        margin:0 auto;
+    }
+}
